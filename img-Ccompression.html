@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compress your images online with our fully responsive image compression tool. Optimize images for web use with adjustable compression levels.">
+    <meta name="keywords" content="image compression, optimize images, image optimizer, compress images online">
+    <meta name="author" content="Your Name">
+    <title>Image Compression Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_ADSENSE_AD_UNIT_ID" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Image Compression Tool</h1>
+        <p>Optimize your images for the web with ease.</p>
+    </header>
+    <main>
+        <section id="compression-tool">
+            <!-- Drag-and-Drop Upload Box -->
+            <div class="upload-box" id="drop-zone">
+                <input type="file" id="image-input" accept="image/*" multiple>
+                <label for="image-input" id="upload-label">
+                    <span class="upload-icon">📁</span>
+                    <span class="upload-text">Drag & Drop or Choose an image</span>
+                </label>
+            </div>
+
+            <!-- Image Preview -->
+            <div id="image-preview">
+                <img id="preview-image" src="" alt="Image Preview">
+                <p id="file-size"></p>
+            </div>
+
+            <!-- Compression Controls -->
+            <div class="compression-controls">
+                <label for="compression-level">Compression Level: <span id="compression-value">50%</span></label>
+                <input type="range" id="compression-level" min="0" max="1" step="0.1" value="0.5">
+            </div>
+
+            <!-- Format Selection -->
+            <div class="format-selection">
+                <label for="output-format">Output Format:</label>
+                <select id="output-format">
+                    <option value="image/jpeg">JPEG</option>
+                    <option value="image/png">PNG</option>
+                    <option value="image/webp">WebP</option>
+                </select>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button id="compress-btn">Compress Image</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+
+            <!-- Compressed Image -->
+            <div id="image-container">
+                <img id="compressed-image" src="" alt="Compressed Image">
+                <p id="compressed-size"></p>
+            </div>
+            <a id="download-link" href="#" download="compressed-image.jpg">Download Compressed Image</a>
+        </section>
+
+        <!-- Ad Space -->
+        <section id="ad-space">
+            <!-- Google AdSense Ad Unit -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="YOUR_ADSENSE_AD_UNIT_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
